@@ -1,4 +1,4 @@
-title: Complementary Dynamics
+title: Progressive Simulation for Cloth Quasistatics
 author: Jiayi Eris Zhang, Seungbae Bang, David I.W. Levin, Alec Jacobson
 html header: <meta property="og:image" content="http://www.dgp.toronto.edu/projects/neuralSubdivision/neuralSubdivision_teaser.jpg" />
 <meta property="og:description" content="We present a novel approach to enrich arbitrary rig animations with elastodynamic secondary effects. Unlike previous methods which pit rig displacements and physical forces as adversaries against each other, we advocate that
@@ -13,10 +13,10 @@ mass-spring models. Our method does not require a particular type of rig
 and adds secondary effects to skeletal animations, cage-based deformations,
 wire deformers, motion capture data, and rigid-body simulations." />
 <meta name="twitter:card" content="summary"></meta>
-<meta name="og:title" content="Complementary Dynamics"></meta>
+<meta name="og:title" content="Progressive Simulation for Cloth Quasistatics"></meta>
 css: style.css
 
-# Complementary Dynamics _SIGGRAPH ASIA 2020_
+# Progressive Simulation for Cloth Quasistatics _SIGGRAPH ASIA 2020_
 
 <div class=authors>
 Jiayi Eris Zhang, Seungbae Bang, David I.W. Levin, Alec Jacobson <br><br>
