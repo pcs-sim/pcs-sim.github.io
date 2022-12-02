@@ -120,6 +120,7 @@ pre, code {
   display: inline-block;
   font-size: 0.85em;
   font-family: Consolas, Inconsolata, Courier, monospace;
+  padding-left: 40px
 }
 
 code {
