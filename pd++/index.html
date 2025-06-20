@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Progressive Dynamics++: A Framework for Stable, Continuous, and
+    Consistent Animation Across Resolution and Time
+  </title>
+	<meta name="author" content="Jiayi Eris Zhang, Doug L. James, Danny M. Kaufman"/>
+<meta property="og:image" content="https://pcs-sim.github.io/pd++/pd++_teaser.png" /> <meta property="og:description" content="The recently developed Progressive Dynamics framework [Zhang et al. 2024] addresses the long-standing challenge in enabling rapid iterative design for high-fidelity cloth and shell animation. In this work, we identify fundamental limitations of the original method in terms of stability and temporal continuity. For robust progressive dynamics simulation we seek methods that provide: (1) stability across all levels of detail (LOD) and timesteps, (2) temporally continuous animations without jumps or jittering, and (3) user-controlled balancing between geometric consistency and enrichment at each timestep, thereby making it a practical previewing tool with high-quality results at the finest level to be used as the final output.<br/>
+
+We propose a general framework, Progressive Dynamics++, for constructing a family of progressive dynamics integration methods that advance physical simulation states forward in both time and spatial resolution, which includes Zhang et al. [2024]'s method as one member. We analyze necessary stability conditions for Progressive Dynamics integrators and introduce a novel, stable method that significantly improves temporal continuity, supported by a new quantitative measure. Additionally, we present a quantitative analysis of the trade-off between geometric consistency and enrichment, along with strategies for balancing between these aspects in  transitions across resolution and time.
+"/> <meta name="twitter:card" content="summary"></meta> <meta name="og:title" content="Progressive Dynamics++: A Framework for Stable, Continuous, and
+Consistent Animation Across Resolution and Time"></meta>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+
+<h1 id="pd++_siggraph2025_" >Progressive Dynamics++: A Framework for Stable, Continuous, and
+  Consistent Animation Across Resolution and Time</h1>
+
+<div class=authors>
+  Jiayi Eris Zhang<sup>1,2</sup>, Doug L. James<sup>2</sup>, Danny M. Kaufman<sup>1</sup><br><br>
+  <sup>1</sup>Adobe Research, <sup>2</sup>Stanford University<br><br>
+  <em>ACM Transactions on Graphics (SIGGRAPH 2025)</em>
+</div>
+
+
+<figure>
+<img src="pd++_teaser.png"/>
+<h5><b> Designing a five-hat-trick animation with Progressive Dynamics:</b> Tossing a floppy hat onto a coat rack is hard, but adjusting initial conditions to successfully throw five hats is nearly impossible when using slow-to-compute, direct, fine-level simulations, due to tricky dynamics, sensitive collisions, and frictional contact. However, using our new Progressive Dynamics++ framework we can quickly explore a large number of coarse preview simulations (Left) to rapidly find a sample that makes the toss work. Once we find this rare, needle-in-a-haystack scenario, with our coarse  simulation (Level 0), where all the hats magically fit and delicately settle on the hooks and one another, Progressive Dynamics++ then progressively (Levels 1-3) synthesizes production-level animations with millions of fine-scale vertices, capturing intricate physical details and, most importantly, maintaining consistent five-hat-trick outcomes. </h5>
+</figure>
+
+<h2 id="downloads">Downloads</h2>
+
+<ul>
+<li> <a href="PD++_main.pdf">Paper (16 MB)</a></li>
+</ul>
+
+<h2 id="abstract">Abstract</h2>
+
+<div class=abstract>
+  The recently developed Progressive Dynamics framework [Zhang et al. 2024] addresses the long-standing challenge in enabling rapid iterative design for high-fidelity cloth and shell animation. In this work, we identify fundamental limitations of the original method in terms of stability and temporal continuity. For robust progressive dynamics simulation we seek methods that provide: (1) stability across all levels of detail (LOD) and timesteps, (2) temporally continuous animations without jumps or jittering, and (3) user-controlled balancing between geometric consistency and enrichment at each timestep, thereby making it a practical previewing tool with high-quality results at the finest level to be used as the final output.<br/>
+
+  We propose a general framework, Progressive Dynamics++, for constructing a family of progressive dynamics integration methods that advance physical simulation states forward in both time and spatial resolution, which includes Zhang et al. [2024]'s method as one member. We analyze necessary stability conditions for Progressive Dynamics integrators and introduce a novel, stable method that significantly improves temporal continuity, supported by a new quantitative measure. Additionally, we present a quantitative analysis of the trade-off between geometric consistency and enrichment, along with strategies for balancing between these aspects in  transitions across resolution and time.
+</div>
+
+
+<h2 id="bibtex">BibTeX</h2>
+<pre><code>@article{zhang2025progressive,
+  title={Progressive Dynamics++: A Framework for Stable, Continuous, and
+    Consistent Animation Across Resolution and Time},
+  author={Zhang, Jiayi Eris and James, Doug L. and Kaufman, Danny M.},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={44},
+  number={4},
+  pages={1--20},
+  year={2025},
+  publisher={ACM New York, NY, USA}
+}
+</code></pre>
+
+<h2>Supplemental Video (5 mins)</h2>
+<!-- <div class=videos>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/ChYy1U8b9yI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+
+<div class=videos>
+  Coming soon!
+</div>
+
+
+<!-- <h2>SIGGRAPH Conference Talk (11 mins)</h2>
+
+<div class=videos>
+  Coming soon!
+</div> -->
+
+</body>
+</html>
+
