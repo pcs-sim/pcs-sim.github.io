@@ -31,6 +31,7 @@ Consistent Animation Across Resolution and Time"></meta>
 <h5><b> Designing a five-hat-trick animation with Progressive Dynamics:</b> Tossing a floppy hat onto a coat rack is hard, but adjusting initial conditions to successfully throw five hats is nearly impossible when using slow-to-compute, direct, fine-level simulations, due to tricky dynamics, sensitive collisions, and frictional contact. However, using our new Progressive Dynamics++ framework we can quickly explore a large number of coarse preview simulations (Left) to rapidly find a sample that makes the toss work. Once we find this rare, needle-in-a-haystack scenario, with our coarse  simulation (Level 0), where all the hats magically fit and delicately settle on the hooks and one another, Progressive Dynamics++ then progressively (Levels 1-3) synthesizes production-level animations with millions of fine-scale vertices, capturing intricate physical details and, most importantly, maintaining consistent five-hat-trick outcomes. </h5>
 </figure>
 
+
 <h2 id="downloads">Downloads</h2>
 
 <ul>
@@ -44,6 +45,12 @@ Consistent Animation Across Resolution and Time"></meta>
 
   We propose a general framework, Progressive Dynamics++, for constructing a family of progressive dynamics integration methods that advance physical simulation states forward in both time and spatial resolution, which includes Zhang et al. [2024]'s method as one member. We analyze necessary stability conditions for Progressive Dynamics integrators and introduce a novel, stable method that significantly improves temporal continuity, supported by a new quantitative measure. Additionally, we present a quantitative analysis of the trade-off between geometric consistency and enrichment, along with strategies for balancing between these aspects in  transitions across resolution and time.
 </div>
+
+
+<figure>
+<img src="fig-happy-face-enrichment.png" style="width: 95%; display: block; margin: 0 auto;"/>
+<h5><b> Happy Face Balloons with Detailed Enrichment:</b> In this high-speed collision scenario, two character balloons entangle and detangle under extreme deformation. Using a 4-level hierarchy, the <i>VelPro</i> integration method in the Progressive Dynamics++ framework captures increasingly intricate wrinkles across levels while preserving consistent deformation, timing, and trajectories. </h5>
+</figure>
 
 
 <h2 id="bibtex">BibTeX</h2>
@@ -70,11 +77,14 @@ Consistent Animation Across Resolution and Time"></meta>
 </div>
 
 
-<!-- <h2>SIGGRAPH Conference Talk (11 mins)</h2>
+<h2>Acknowledgements</h2>
 
-<div class=videos>
-  Coming soon!
-</div> -->
+<div class=abstract>
+  Jiayi Eris Zhang is supported by the Stanford Graduate Fellowship, the Roblox Graduate Fellowship, and the NVIDIA Graduate Fellowship. Doug James acknowledges support from Adobe, SideFX, NVIDIA, and the Department of Energy, National Nuclear Security Administration under Award Number DE-NA0003968; Houdini software courtesy of SideFX. We thank Zhenyuan Zhang for insightful discussions and for proofreading all the appendix proofs.
+
+</div>
+
+
 
 </body>
 </html>
