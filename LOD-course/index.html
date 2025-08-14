@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Level-of-Detail for Geometry Processing and Simulation
+  </title>
+	<meta name="author" content="Jiayi Eris Zhang, Doug L. James, Danny M. Kaufman"/>
+<meta property="og:image" content="https://pcs-sim.github.io/pd++/pd++_teaser.png" /> <meta property="og:description" content="The recently developed Progressive Dynamics framework [Zhang et al. 2024] addresses the long-standing challenge in enabling rapid iterative design for high-fidelity cloth and shell animation. In this work, we identify fundamental limitations of the original method in terms of stability and temporal continuity. For robust progressive dynamics simulation we seek methods that provide: (1) stability across all levels of detail (LOD) and timesteps, (2) temporally continuous animations without jumps or jittering, and (3) user-controlled balancing between geometric consistency and enrichment at each timestep, thereby making it a practical previewing tool with high-quality results at the finest level to be used as the final output.<br/>
+
+We propose a general framework, Progressive Dynamics++, for constructing a family of progressive dynamics integration methods that advance physical simulation states forward in both time and spatial resolution, which includes Zhang et al. [2024]'s method as one member. We analyze necessary stability conditions for Progressive Dynamics integrators and introduce a novel, stable method that significantly improves temporal continuity, supported by a new quantitative measure. Additionally, we present a quantitative analysis of the trade-off between geometric consistency and enrichment, along with strategies for balancing between these aspects in  transitions across resolution and time.
+"/> <meta name="twitter:card" content="summary"></meta> <meta name="og:title" content="Progressive Dynamics++: A Framework for Stable, Continuous, and
+Consistent Animation Across Resolution and Time"></meta>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+
+<h1 id="pd++_siggraph2025_">Level-of-Detail for Geometry Processing and Simulation</h1>
+
+<div class=authors>
+  Jiayi Eris Zhang<sup>1</sup>, Hsueh-Ti Derek Liu<sup>2</sup><br><br>
+  <sup>1</sup>Stanford University, <sup>2</sup>Roblox<br><br>
+  <em>ACM SIGGRAPH North America Course</em>
+</div>
+
+
+<figure style="text-align: center;">
+  <img src="LOD-course-featured.png" style="max-width:50%; height:auto;"/>
+  <h5>
+    <b>Level-of-Detail for Simulation:</b> We apply Progressive Dynamics (PD) [Zhang et al. 2024] to simulate two in- flated Octocat objects colliding, with details progressively emerging across resolution levels.
+  </h5>
+</figure>
+
+
+<h2 id="downloads">Downloads</h2>
+
+<ul>
+  <li><a href="LOD-course-outline.pdf">Course Outline (1.9 MB)</a></li>
+  <li>Slides (coming soon)</li>
+  <li>Notes (coming soon)</li>
+  <li>Code &amp; Demo (coming soon)</li>
+</ul>
+
+
+<h2 id="abstract">Abstract</h2>
+
+<div class=abstract>
+Level-of-detail (LOD) is a concept we intuitively experience in everyday life—whether it is how our brains filter visual information or how digital maps adjust as we zoom. At its core, LOD is about allocating detail where it matters most, striking a balance between efficiency and precision. While originally developed to accelerate rendering in computer graphics, modern LOD techniques have evolved into a powerful framework for constructing hierarchical shape representations and designing multilevel solvers in geometry processing and simulation.</br>
+
+</br>
+This course begins by highlighting the role of LOD not just in visualization, but also in numerical computation. We introduce key methods for constructing hierarchical structures, then dive into the design of multilevel solvers—focusing on how to trans- fer quantities and signals across levels, with emphasis on surface self-parametrization and intrinsic prolongation. We conclude with ap- plications that showcase how these hierarchical frameworks enable efficient, accurate and scalable solutions to problems in geometry processing and physical simulation.
+</div>
+
+
+
+<!-- <h2 id="bibtex">BibTeX</h2>
+<pre><code>@article{zhang2025progressive,
+  title={Progressive Dynamics++: A Framework for Stable, Continuous, and
+    Consistent Animation Across Resolution and Time},
+  author={Zhang, Jiayi Eris and James, Doug L. and Kaufman, Danny M.},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={44},
+  number={4},
+  pages={1--20},
+  year={2025},
+  publisher={ACM New York, NY, USA}
+}
+</code></pre> -->
+
+
+<div>
+  <h2>Course Recording (3 hours)</h2>
+</div>
+<div class=videos>
+  Coming soon!
+</div>
+
+
+<!-- <h2>Acknowledgements</h2>
+
+<div class=abstract>
+  Jiayi Eris Zhang is supported by the Stanford Graduate Fellowship, the Roblox Graduate Fellowship, and the NVIDIA Graduate Fellowship. Doug James acknowledges support from Adobe, SideFX, NVIDIA, and the Department of Energy, National Nuclear Security Administration under Award Number DE-NA0003968; Houdini software courtesy of SideFX. We thank Zhenyuan Zhang for insightful discussions and for proofreading all the appendix proofs.
+
+</div> -->
+
+
+</body>
+</html>
+
